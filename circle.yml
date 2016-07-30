@@ -1,10 +1,6 @@
-dependencies:
-  override:
-      - node app.js
-
 test:
   override:
-    - node app.js
+    - php ./test
 notify:
   webhooks:
     # A list of hook hashes, containing the URL field
