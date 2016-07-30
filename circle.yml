@@ -4,4 +4,4 @@ test:
 notify:
   webhooks:
     # A list of hook hashes, containing the URL field
-    - url: 127.0.0.1:8080/hooks/03ed15f0ca941511171bb1fb78f403dbd9a0f147
+    - url: localhost:8000/hooks
