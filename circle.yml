@@ -7,7 +7,8 @@ notify:
     - url: http://127.0.0.1:8080/
 
     {
-  "payload": {
+  "payload":
+      {
     "vcs_url" : "https://github.com/Sach1810/siren",
     "build_url" : "https://circleci.com/gh/Sach1810/siren/6",
     "build_num" : 6,
