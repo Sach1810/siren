@@ -1,6 +1,6 @@
 test:
   override:
-    - php ./test.php
+      -bash -c "node app.js"
 notify:
   webhooks:
     # A list of hook hashes, containing the URL field
