@@ -4,7 +4,7 @@ test:
 notify:
   webhooks:
     # A list of hook hashes, containing the URL field
-    - url: http://127.0.0.1:8080/sacha
+    - url: 127.0.0.1:8080/sacha
 
 #     {
 #   "payload":
