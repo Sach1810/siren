@@ -14,6 +14,8 @@ var circleData;
 app.post('/', function (req, res) {
     // console.log(req.body);
     circleData = req.body;
+    console.log(circleData);
+    console.log("***************************************");
     console.log(circleData.payload.branch);
     console.log(req.body.payload.branch);
     res.json(circleData);
