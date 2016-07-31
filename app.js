@@ -8,27 +8,20 @@ var app = express();
 app.use(express.static('public'));
 app.use(express.static('node_modules'));
 
-app.get('/', function (req, res) {
-    console.log(req.body);
-    console.log("****between**************************");
-    console.log(res.body);
-    res.send(req.body);
-    
-});
 
-app.post('/', function (req, res) {
-    console.log(req.body);
-    console.log("****between**************************");
-    console.log(res.body);
-    res.send(req.body);
-    
-});
-
-//app.get('/hooks', function (req, res) {
-//    res.send(req.body);
+//app.get('/', function (req, res) {
 //    console.log(req.body);
 //    console.log("****between**************************");
 //    console.log(res.body);
+//    res.send(req.body);
+//    
 //});
+
+app.post('/', function (req, res) {
+    console.log(req.body);
+    payload = req.body;
+    res.json(req.body);
+});
+
 
 app.listen(8000);
