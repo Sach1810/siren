@@ -17,7 +17,6 @@ app.post('/', function (req, res) {
     payload = req.body;
     JSON.parse(payload);
     console.log(payload);
-//    res.json(req.body);
 });
 
 app.get('/', function (req, res) {
