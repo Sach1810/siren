@@ -15,7 +15,7 @@ app.post('/', function (req, res) {
     // console.log(req.body);
     circleData = req.body;
     console.log(circleData);
-    res.send(circleData);
+    res.json(circleData);
 });
 
 app.get('/', function (req, res) {
