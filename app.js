@@ -14,13 +14,14 @@ var circleData;
 app.post('/', function (req, res) {
     // console.log(req.body);
     circleData = req.body;
-    console.log(circleData);
+    console.log(circleData.payload.branch);
+    console.log(req.body.payload.branch);
     res.json(circleData);
 });
 
 app.get('/', function (req, res) {
     res.send(circleData);
-    console.log(circleData);
+//    console.log(circleData);
 });
 
 app.listen(8000);
