@@ -2,7 +2,6 @@
 test:
   override:
     - php ./test.php
-#        - php ./test.php
  
 #notify:
 #  webhooks:
