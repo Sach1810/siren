@@ -8,18 +8,18 @@ var app = express();
 app.use(express.static('public'));
 app.use(express.static('node_modules'));
 
-var payload;
+var circleData;
 
 
 app.post('/', function (req, res) {
     // console.log(req.body);
-    payload = JSON.parse(req.body);
-    console.log(payload);
+    circleData = req.body;
+    console.log(circleData);
 });
 
 app.get('/', function (req, res) {
-    res.send(payload);
-    console.log(payload);
+    res.send(circleData);
+    console.log(circleData);
 });
 
 app.listen(8000);
