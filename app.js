@@ -12,7 +12,7 @@ app.get('/', function (request, response) {
   response.send("You are inside the fullstack project")
 });
 
-app.get('/hooks', function (req, res) {
+app.post('/hooks', function (req, res) {
     res.send(req.body);
     console.log(req.body);
     console.log("****between**************************");
