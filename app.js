@@ -10,23 +10,17 @@ app.use(express.static('node_modules'));
 
 var payload;
 
-//app.get('/', function (req, res) {
-//    console.log(req.body);
-//    console.log("****between**************************");
-//    console.log(res.body);
-//    res.send(req.body);
-//    
-//});
 
 app.post('/', function (req, res) {
-    console.log(req.body);
+    // console.log(req.body);
     payload = req.body;
-    res.json(req.body);
+    json.parse(payload);
+    console.log(payload);
+//    res.json(req.body);
 });
 
 app.get('/', function (req, res) {
     res.send(payload);
- 
 });
 
 app.listen(8000);
