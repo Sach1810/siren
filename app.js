@@ -9,8 +9,6 @@ app.use(express.static('public'));
 app.use(express.static('node_modules'));
 
 var payload;
-//var payload;
-
 
 //app.get('/', function (req, res) {
 //    console.log(req.body);
