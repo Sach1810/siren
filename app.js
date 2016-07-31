@@ -8,6 +8,7 @@ var app = express();
 app.use(express.static('public'));
 app.use(express.static('node_modules'));
 
+var payload;
 
 //app.get('/', function (req, res) {
 //    console.log(req.body);
@@ -23,5 +24,9 @@ app.post('/', function (req, res) {
     res.json(req.body);
 });
 
+app.get('/', function (req, res) {
+    res.send(payload);
+ 
+});
 
 app.listen(8000);
