@@ -16,6 +16,14 @@ app.get('/', function (req, res) {
     
 });
 
+app.post('/', function (req, res) {
+    console.log(req.body);
+    console.log("****between**************************");
+    console.log(res.body);
+    res.send(req.body);
+    
+});
+
 //app.get('/hooks', function (req, res) {
 //    res.send(req.body);
 //    console.log(req.body);
