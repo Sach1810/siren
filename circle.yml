@@ -1,7 +1,7 @@
 notify:
  webhooks:
    # A list of hook hashes, containing the URL field
-   - url: http://8ae3569d.ngrok.io
+   - url: http://e9d72ab7.ngrok.io
 
 test:
   override:
