@@ -20,7 +20,7 @@ app.post('/', function (req, res) {
 
     if (circleData.payload.status === 'success'){
         console.log("YEAH BUDDY!");
-        say.speak('Hello!');
+        say.speak(circleData.payload.committer_name + circleData.payload.subject);
     };
     
     
