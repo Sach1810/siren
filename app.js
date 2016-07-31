@@ -15,12 +15,12 @@ var payload;
 app.post('/', function (req, res) {
     // console.log(req.body);
     payload = req.body;
-    JSON.parse(payload);
     console.log(payload);
 });
 
 app.get('/', function (req, res) {
     res.send(payload);
+    console.log(payload);
 });
 
 app.listen(8000);
