@@ -12,12 +12,11 @@ app.get('/', function (request, response) {
   response.send("You are inside the fullstack project")
 });
 
-//app.get('/hooks', function (req, res) {
-//    console.log(req);
-//    console.log(res);
-//    res.send("hi");
-//});
-
-//comments
+app.get('/hooks', function (req, res) {
+    res.send(req.body);
+    console.log(req.body);
+    console.log("between***********************");
+    console.log(res.body);
+});
 
 app.listen(8000);
