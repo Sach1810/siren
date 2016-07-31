@@ -9,12 +9,11 @@ app.use(express.static('public'));
 app.use(express.static('node_modules'));
 
 var payload;
-//var payload;
 
 
 app.post('/', function (req, res) {
     // console.log(req.body);
-    payload = req.body;
+    payload = JSON.parse(req.body);
     console.log(payload);
 });
 
