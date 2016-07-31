@@ -15,7 +15,7 @@ var payload;
 app.post('/', function (req, res) {
     // console.log(req.body);
     payload = req.body;
-    json.parse(payload);
+    JSON.parse(payload);
     console.log(payload);
 //    res.json(req.body);
 });
