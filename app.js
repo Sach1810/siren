@@ -1,5 +1,5 @@
 var express = require('express');
- var bodyParser = require('body-parser');
+var bodyParser = require('body-parser');
 var app = express();
 
  app.use(bodyParser.json());
@@ -9,6 +9,7 @@ app.use(express.static('public'));
 app.use(express.static('node_modules'));
 
 var payload;
+//var payload;
 
 
 app.post('/', function (req, res) {
