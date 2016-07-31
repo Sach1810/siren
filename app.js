@@ -8,8 +8,12 @@ var app = express();
 app.use(express.static('public'));
 app.use(express.static('node_modules'));
 
-app.get('/', function (request, response) {
-  response.send("You are inside the fullstack project")
+app.get('/', function (req, res) {
+    console.log(req.body);
+    console.log("****between**************************");
+    console.log(res.body);
+    res.send(req.body);
+    
 });
 
 app.get('/hooks', function (req, res) {
