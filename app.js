@@ -12,13 +12,16 @@ var circleData;
 
 
 app.post('/', function (req, res) {
-//     console.log(req.body);
-//     console.log("***************************************");
     circleData = req.body;
     console.log(circleData);
     console.log("***************************************");
-    console.log(circleData.payload.branch);
-    console.log(req.body.payload.branch);
+    console.log(circleData.payload.status);
+
+    if (circleData.payload.status === 'success'){
+        console.log("YEAH BUDDY!");
+    };
+    
+    
     res.json(circleData);
 });
 
