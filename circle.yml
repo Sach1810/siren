@@ -11,4 +11,4 @@ test:
 notify:
  webhooks:
    # A list of hook hashes, containing the URL field
-   - url: http://b2571028.ngrok.io/
+   - url: http://a24a09af.ngrok.io/
