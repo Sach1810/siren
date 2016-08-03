@@ -1,16 +1,16 @@
-console.log("1");
+console.log("12");
 
 var firstName;
 
 var splitName = function(){
     var fullName = "Sacha David";
     var nameArray = fullName.split(" ");
-    
+
     firstName = nameArray[0];
 };
 
 splitName();
-     
+
      console.log(firstName + "this");
 
 var failureQuotes = [
