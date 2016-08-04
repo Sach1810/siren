@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# [ -f test ] && echo "File exist" || echo "File does not exist"
+
+# cd circleci-artifacts
+#if [ -e  circleci-artifacts/integrityExitCode.php ]
+if [ -e  test/test.php ]
+then
+    # cp -a /circleci-artifacts/lib/. /tmp/glasseson-server/lib/
+    # cd /tmp/glasseson-server
+    #
+    # git config user.name "circleci"
+    # git config user.email "circleci@6over6.com"
+    # git add .
+    # git commit -m"CircleCI copy lib files"
+    # git push origin $1
+
+echo $?
+
+    echo "files have been copied"
+else
+    true; echo $?
+   echo "Sorry Integrity failed" >&2
+fi
