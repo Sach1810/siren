@@ -3,10 +3,10 @@ test:
   override:
     - php ./test.php
 
-#notify:
-#  webhooks:
-#    # A list of hook hashes, containing the URL field
-#     - url: http://8ae3569d.ngrok.io/hooks
+notify:
+ webhooks:
+   # A list of hook hashes, containing the URL field
+    - url: http://7428898e.ngrok.io/hooks
 
 notify:
  webhooks:
